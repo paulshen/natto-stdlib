@@ -1,0 +1,16 @@
+{
+  "name": "@natto/stdlib",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/paulshen/natto-stdlib.git"
+  },
+  "author": "Paul Shen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/paulshen/natto-stdlib/issues"
+  },
+  "homepage": "https://github.com/paulshen/natto-stdlib#readme"
+}

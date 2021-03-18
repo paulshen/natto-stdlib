@@ -26,7 +26,7 @@
     "build:es2015": "tsc --module es2015 --target es2015 --outDir dist/es2015",
     "build:esm": "tsc --module es2015 --target es5 --outDir dist/esm",
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
-    "build:umd": "rollup dist/esm/index.js --format umd --name natto --sourcemap --file dist/umd/natto-stdlib.js",
+    "build:umd": "rollup dist/esm/browser.js --format umd --name natto --sourcemap --file dist/umd/natto-stdlib.js",
     "build:umd:min": "cd dist/umd && uglifyjs --compress --mangle --source-map --comments --output natto-stdlib.min.js -- natto-stdlib.js && gzip natto-stdlib.min.js -c > natto-stdlib.min.js.gz"
   },
   "dependencies": {

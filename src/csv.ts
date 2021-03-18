@@ -1,6 +1,7 @@
 import csvParse from "csv-parse";
 
 export function csv(
+  parse: typeof csvParse,
   input: string,
   options?: csvParse.Options
 ): Promise<any | undefined> {
@@ -13,9 +14,9 @@ export function csv(
       }
     };
     if (options !== undefined) {
-      csvParse(input, options, cb);
+      parse(input, options, cb);
     } else {
-      csvParse(input, cb);
+      parse(input, cb);
     }
   });
 }

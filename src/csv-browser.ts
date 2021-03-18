@@ -1,4 +1,4 @@
-import csvParse from "csv-parse";
+import csvParse from "csv-parse/lib/browser";
 
 export function csv(
   input: string,

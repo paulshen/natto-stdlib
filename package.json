@@ -28,5 +28,8 @@
     "build:cjs": "tsc --module commonjs --target es5 --outDir dist/cjs",
     "build:umd": "rollup dist/esm/index.js --format umd --name natto --sourcemap --file dist/umd/natto-stdlib.js",
     "build:umd:min": "cd dist/umd && uglifyjs --compress --mangle --source-map --comments --output natto-stdlib.min.js -- natto-stdlib.js && gzip natto-stdlib.min.js -c > natto-stdlib.min.js.gz"
+  },
+  "dependencies": {
+    "csv-parse": "^4.15.3"
   }
 }

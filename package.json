@@ -12,5 +12,8 @@
   "bugs": {
     "url": "https://github.com/paulshen/natto-stdlib/issues"
   },
-  "homepage": "https://github.com/paulshen/natto-stdlib#readme"
+  "homepage": "https://github.com/paulshen/natto-stdlib#readme",
+  "devDependencies": {
+    "typescript": "^4.2.3"
+  }
 }
